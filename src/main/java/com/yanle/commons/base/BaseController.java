@@ -1,6 +1,4 @@
-package com.yanle.commons.base;/**
- * Created by lenovo on 2016-11-23.
- */
+package com.yanle.commons.base;
 
 import com.yanle.commons.result.Result;
 import com.yanle.commons.shiro.ShiroUser;

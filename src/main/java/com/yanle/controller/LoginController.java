@@ -3,7 +3,6 @@ package com.yanle.controller;
 import com.yanle.commons.base.BaseController;
 import com.yanle.commons.utils.DigestUtils;
 import com.yanle.commons.utils.StringUtils;
-import com.yanle.pojo.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.shiro.SecurityUtils;
@@ -117,6 +116,12 @@ public class LoginController extends BaseController{
         return "unauth";
     }
 
+    /**
+     * 退出
+     * @return
+     */
+    @RequestMapping(value = "/logout")
+    @ResponseBody
     public  Object logout(){
         LOGGER.info("退出");
         Subject subject = SecurityUtils.getSubject();
